@@ -1,0 +1,79 @@
+html {
+  scroll-behavior: smooth;
+}
+.service-content {
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  .service-content.open {
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  .service-image {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .service-image1 {
+    width: 100%;  /* Makes images fill the container */
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures that the images fill the area without distortion */
+  }
+
+
+  .case-study-card {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .case-study-card:hover {
+    transform: translateY(-10px);
+  }
+  .tag {
+    padding: 4px 12px;
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 16px;
+    margin-right: 8px;
+    margin-top: 8px;
+    display: inline-block;
+    font-size: 0.875rem;
+  }
+
+  .footer {
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 20px;
+    padding: 60px 20px; /* Adjusted padding for responsiveness */
+    margin-bottom: 50px;
+  }
+
+  .footer button {
+    transition: all 0.3s ease;
+    font-size: 1rem; /* Default smaller font size for button */
+  }
+
+  .footer button:hover {
+    background-color: #444444;
+    transform: scale(1.05);
+  }
+
+  /* Initial state of the element (hidden) */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* When the class is added (visible) */
+  .fade-in-visible {
+    opacity: 1;
+  }
+
+  .modal.hidden {
+    display: none;
+  }
+
+  
