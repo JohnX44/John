@@ -20,27 +20,28 @@
 
 <body class=" bg-white text-gray-800">
 
-  <!-- Navbar -->
-<nav class="flex justify-between items-center p-4 border-b border-gray-300">
-  <!-- Logo -->
-  <div class="text-2xl font-extrabold flex items-center">
-    <img src="/imgs/logo.png" alt="Logo" class="w-auto h-10" />
-  </div>
+  <nav class="flex items-center justify-center p-4 border-b border-gray-300 relative">
+    <!-- Logo (Centered) -->
+    <div class="text-2xl font-extrabold flex items-center absolute left-1/2 transform -translate-x-1/2">
+      <img src="/imgs/logo.png" alt="Logo" class="w-auto h-14" />
+    </div>
   
-  <!-- Hamburger Menu (for mobile) -->
-  <div class="lg:hidden flex items-center cursor-pointer" id="hamburger">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-800">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-    </svg>
-  </div>
-
-  <!-- Desktop Menu -->
-  <div class="hidden lg:flex space-x-6 text-sm">
-    <a href="#" class="hover:text-gray-600">Home</a>
-    <a href="#service" class="hover:text-gray-600">Skills</a>
-    <a href="#contact" class="hover:text-gray-600">Contact</a>
-  </div>
-</nav>
+    <!-- Hamburger Menu (for mobile) -->
+    <div class="lg:hidden flex items-center cursor-pointer absolute left-4" id="hamburger">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-800">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </div>
+  
+    <!-- Menu (Centered on larger screens) -->
+    <div class="hidden lg:flex space-x-6 text-sm absolute right-4">
+      <a href="#" class="hover:text-gray-600">Home</a>
+      <a href="#service" class="hover:text-gray-600">Skills</a>
+      <a href="#contact" class="hover:text-gray-600">Contact</a>
+    </div>
+  </nav>
+  
+  
 
 <!-- Mobile Menu -->
 <div class="lg:hidden" id="mobileMenu" style="display: none;">
@@ -95,7 +96,7 @@
  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 px-8 mb-16 max-w-full sm:max-w-screen-lg md:max-w-screen-xl mx-auto">
     <!-- Box 1: FIGMA -->
     <div class="col-span-12 h-40 rounded-2xl bg-gradient-to-r from-green-400 to-blue-500 flex items-center justify-center text-white text-4xl lg:text-5xl font-bold shadow-xl transform hover:scale-105 transition-all fade-in">
-      WEB DEV
+      PAGE BUILDER
     </div>
 
     <!-- Box 2: CANVA -->
@@ -110,7 +111,7 @@
 
     <!-- Box 4: PROGRAMMING -->
     <div class="col-span-12 h-40 rounded-2xl bg-gradient-to-r from-teal-300 to-green-600 flex items-center justify-center text-white text-4xl lg:text-5xl font-bold shadow-xl transform hover:scale-105 transition-all fade-in">
-      SEO
+      SEO | LEAD GEN
     </div>
   </section>
 
